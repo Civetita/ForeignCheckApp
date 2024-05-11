@@ -4,9 +4,9 @@ const port = 3000;
 
 app.use(express.json()); 
 
-const userController = require('./Modules/Users/userController');
-const documentController = require('./Modules/Documents/documentController');
-const requestController = require('./Modules/Requests/requestController');
+const userController = require('../Modules/Users/userController');
+const documentController = require('../Modules/Documents/documentController');
+const requestController = require('../Modules/Requests/requestController');
 
 // Základní route
 app.get('/', (req, res) => {
