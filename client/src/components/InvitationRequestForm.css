@@ -1,0 +1,44 @@
+.invitationRequestForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.invitationRequestForm h2 {
+    text-align: center;
+    color: #333;
+}
+
+.invitationRequestForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.invitationRequestForm input[type="text"],
+.invitationRequestForm input[type="date"],
+.invitationRequestForm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.invitationRequestForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.invitationRequestForm button:hover {
+    background-color: #004494;
+}

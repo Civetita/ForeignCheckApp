@@ -24,7 +24,7 @@ function Header({ setView, setRole, role }) {
       </div>
       <div className="actions">
         <button onClick={() => setView('requestA1')}>Žádost o A1</button>
-        <button onClick={() => setView('requestLetter')}>Žádost o Zvací/Vysílací dopis</button>
+        <button onClick={() => setView('invitationRequest')}>Žádost o zvací/vysílací dopis</button>
         <button onClick={() => setView('documentControl')}>Kontrola Dokumentů</button>
       </div>
     </header>

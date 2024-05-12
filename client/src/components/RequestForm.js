@@ -19,17 +19,14 @@ function RequestForm() {
   return (
     <form onSubmit={handleSubmit}>
       <h1>Žádost o A1</h1>
-      <label>Vybrat A1:
+      <label>Vybrat druh A1: 
         <select value={form.a1Type} onChange={e => setForm({...form, a1Type: e.target.value})}>
-          <option value="typ1">Typ 1</option>
-          <option value="typ2">Typ 2</option>
+          <option value="typ1">Země EU a EHP</option>
+          <option value="typ2">Země mimo EU a EHP</option>
         </select>
       </label>
       <label>Destinace:
-        <select value={form.destination} onChange={e => setForm({...form, destination: e.target.value})}>
-          <option value="country1">Země 1</option>
-          <option value="country2">Země 2</option>
-        </select>
+      <input type="text" value={form.destination} onChange={e => setForm({...form, destination: e.target.value})} />
       </label>
       <label>Účel cesty:
         <input type="text" value={form.travelPurpose} onChange={e => setForm({...form, travelPurpose: e.target.value})} />

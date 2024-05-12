@@ -1,0 +1,12 @@
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 10px 0;
+  }
+  
+  input, select {
+    margin-top: 5px;
+  }
