@@ -1,0 +1,52 @@
+.requests {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.requests h1 {
+    color: #333;
+}
+
+.requests div {
+    margin-bottom: 20px;
+}
+
+.requests input, .requests textarea {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.requests button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.requests button:hover {
+    background-color: #45a049;
+}
+
+.requests ul {
+    list-style: none;
+    padding: 0;
+}
+
+.requests li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.requests li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px
+}

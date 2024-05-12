@@ -1,0 +1,16 @@
+.home {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .home h1 {
+    color: #333;
+  }
+  
+  .home p {
+    font-size: 16px;
+    color: #666;
+  }
+  

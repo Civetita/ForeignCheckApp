@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
+import Documents from './components/Documents';
+import Users from './components/Users';
+import Messages from './components/Messages';
+import Requests from './components/Requests';
+import RequestForm from './components/RequestForm';
 
 function App() {
+  const [view, setView] = useState('home', 'documents', 'users');  // 'home', 'documents', 'users'
+  const [role, setRole] = useState('user');  // Přepínání mezi 'admin' a 'user'
+  const [messages, setMessages] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setView={setView} setRole={setRole} role={role} />
+      <Messages messages={messages} setMessages={setMessages} />
+      {view === 'home' && <Home />}
+      {view === 'documents' && <Documents />}
+      {view === 'users' && <Users />}
+      {view === 'requests' && <Requests />}
     </div>
   );
 }

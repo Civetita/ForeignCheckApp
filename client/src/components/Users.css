@@ -1,0 +1,58 @@
+.users {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.users h1 {
+    color: #333;
+}
+
+.users div {
+    margin-bottom: 20px;
+}
+
+.users input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.users button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.users button:hover {
+    background-color: #40a9ff;
+}
+
+.users ul {
+    list-style: none;
+    padding: 0;
+}
+
+.users li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.users li button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.users li button:hover {
+    background-color: #ff7875;
+}
+

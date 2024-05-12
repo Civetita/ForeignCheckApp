@@ -16,13 +16,14 @@ app.get('/', (req, res) => {
 // Autentizační endpoint
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
-  const user = userController.authenticateUser(username, password);
-  if (user) {
-    res.status(200).json({ message: 'Logged in successfully', user });
+  const result = userController.authenticateUser(username, password);
+  if (result.auth) {
+      res.status(200).send(result);
   } else {
-    res.status(401).send('Authentication failed');
+      res.status(401).send('Login failed');
   }
 });
+
 
 // Endpointy pro uživatele
 app.get('/users', (req, res) => {
